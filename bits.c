@@ -15,6 +15,10 @@ bool test_bit(uint32_t v, unsigned n) {
     return v & (1u << n);
 }
 
+uint32_t toggle_bit(uint32_t v, unsigned n) {
+    return v ^ (1u << n);
+}
+
 int main (void) {
 
     assert(set_bit(0x35, 1) == 0x37);
@@ -26,6 +30,10 @@ int main (void) {
     
     assert(test_bit(0x35, 4) == true);
     assert(test_bit(0x35, 3) == false);
+
+    assert(toggle_bit(0x35, 3) == 0x3D);
+    assert(toggle_bit(0x35, 2) == 0x31);
+    assert(toggle_bit(toggle_bit(0x35, 4), 4 )== 0x35);
 
     printf("all test passed\n");
     return 0;
