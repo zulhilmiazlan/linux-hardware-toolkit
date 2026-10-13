@@ -1,5 +1,59 @@
-==energy_uj
-22458154562
+== kernel
+7.2.9-2-cachyos
+== cpu
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  16
+On-line CPU(s) list:                     0-15
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 7 7800X3D 8-Core Processor
+CPU family:                              25
+Model:                                   97
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+Socket(s):                               1
+Stepping:                                2
+Microcode version:                       0xa60120c
+Frequency boost:                         enabled
+CPU(s) scaling MHz:                      82%
+CPU max MHz:                             4876.6860
+CPU min MHz:                             411.2870
+BogoMIPS:                                8400.06
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid overflow_recov succor smca fsrm flush_l1d amd_lbr_pmc_freeze
+Virtualization:                          AMD-V
+L1d cache:                               256 KiB (8 instances)
+L1i cache:                               256 KiB (8 instances)
+L2 cache:                                8 MiB (8 instances)
+L3 cache:                                96 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-15
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Mitigation; Safe RET
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Mitigation; Clear CPU buffers
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+== powercap
+intel-rapl
+intel-rapl:0
+intel-rapl:0:0
+== energy_uj
+1169355222
 == hwmon names
 /sys/class/hwmon/hwmon0/name:nvme
 /sys/class/hwmon/hwmon1/name:nvme
@@ -13,462 +67,202 @@
 /sys/class/hwmon/hwmon10/name:mt7921_phy0
 == hwmon files
 /sys/class/hwmon/hwmon0/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../[1;34mnvme0[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_alarm
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_min
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
+device
+name
+power
+subsystem
+temp1_alarm
+temp1_crit
+temp1_input
+temp1_label
+temp1_max
+temp1_min
+temp2_input
+temp2_label
+temp2_max
+temp2_min
+temp3_input
+temp3_label
+temp3_max
+temp3_min
+uevent
 
 /sys/class/hwmon/hwmon1/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../[1;34mnvme1[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_alarm
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_min
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon2/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../../[1;34m0000:03:00.0[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 fan1_enable
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 fan1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 fan1_max
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 fan1_min
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 fan1_target
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 freq1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 freq1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 freq2_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 freq2_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 in0_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 in0_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_average
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_cap
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_cap_default
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_cap_max
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_cap_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 pwm1
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 pwm1_max
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 pwm1_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit_hyst
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_emergency
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_crit_hyst
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_emergency
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp2_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_crit_hyst
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_emergency
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon3/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../../[1;34m0000:16:00.0[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 freq1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 freq1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 in0_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 in0_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 in1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 in1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 power1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon5/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../[1;34mps-controller-battery-8c:41:f2:0c:05:f0[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon6/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../../[1;34m0000:00:18.3[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_label
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp3_label
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon7/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../../[1;34m17-0051[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_enable
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_lcrit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_lcrit_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_min_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon8/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../../[1;34m17-0053[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_crit_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_enable
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_lcrit
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_lcrit_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_min
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_min_alarm
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
-
-/sys/class/hwmon/hwmon9/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../../[1;34mr8169-0-800:00[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_max
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
+device
+name
+power
+subsystem
+temp1_alarm
+temp1_crit
+temp1_input
+temp1_label
+temp1_max
+temp1_min
+temp2_input
+temp2_label
+temp2_max
+temp2_min
+temp3_input
+temp3_label
+temp3_max
+temp3_min
+uevent
 
 /sys/class/hwmon/hwmon10/:
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m device[0m [1;90m->[0m [36m../../[1;34mphy0[0m
-[1;34md[33mr[31mw[32mx[0m[33mr[1;90m-[0m[32mx[33mr[1;90m-[0m[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [34m [1mpower[0m
-[36ml[1;33mr[31mw[32mx[0m[33mr[31mw[32mx[33mr[31mw[32mx[0m    [1;90m-[0m root [34m13 Okt  10:09[0m [36m subsystem[0m [1;90m->[0m [36m../../../../../../../../../class/[1;34mhwmon[0m
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 name
-.[1;33mr[90m--[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 temp1_input
-.[1;33mr[31mw[90m-[0m[33mr[1;90m--[0m[33mr[1;90m--[0m [1;32m4.1k[0m root [34m13 Okt  10:09[0m 󰡯 uevent
+device
+name
+power
+subsystem
+temp1_input
+uevent
+
+/sys/class/hwmon/hwmon2/:
+device
+fan1_enable
+fan1_input
+fan1_max
+fan1_min
+fan1_target
+freq1_input
+freq1_label
+freq2_input
+freq2_label
+in0_input
+in0_label
+name
+power
+power1_average
+power1_cap
+power1_cap_default
+power1_cap_max
+power1_cap_min
+power1_label
+pwm1
+pwm1_max
+pwm1_min
+subsystem
+temp1_crit
+temp1_crit_hyst
+temp1_emergency
+temp1_input
+temp1_label
+temp2_crit
+temp2_crit_hyst
+temp2_emergency
+temp2_input
+temp2_label
+temp3_crit
+temp3_crit_hyst
+temp3_emergency
+temp3_input
+temp3_label
+uevent
+
+/sys/class/hwmon/hwmon3/:
+device
+freq1_input
+freq1_label
+in0_input
+in0_label
+in1_input
+in1_label
+name
+power
+power1_input
+power1_label
+subsystem
+temp1_input
+temp1_label
+uevent
+
+/sys/class/hwmon/hwmon5/:
+device
+name
+power
+subsystem
+uevent
+
+/sys/class/hwmon/hwmon6/:
+device
+name
+power
+subsystem
+temp1_input
+temp1_label
+temp3_input
+temp3_label
+uevent
+
+/sys/class/hwmon/hwmon7/:
+device
+name
+power
+subsystem
+temp1_crit
+temp1_crit_alarm
+temp1_enable
+temp1_input
+temp1_lcrit
+temp1_lcrit_alarm
+temp1_max
+temp1_max_alarm
+temp1_min
+temp1_min_alarm
+uevent
+
+/sys/class/hwmon/hwmon8/:
+device
+name
+power
+subsystem
+temp1_crit
+temp1_crit_alarm
+temp1_enable
+temp1_input
+temp1_lcrit
+temp1_lcrit_alarm
+temp1_max
+temp1_max_alarm
+temp1_min
+temp1_min_alarm
+uevent
+
+/sys/class/hwmon/hwmon9/:
+device
+name
+power
+subsystem
+temp1_input
+temp1_max
+uevent
+== gpu runtime status
+/sys/class/drm/card0/device/power/runtime_status:active
+/sys/class/drm/card1/device/power/runtime_status:suspended
 == gpu power cap
-== gpu power cap
+grep: /sys/class/drm/card1/device/hwmon/hwmon2/power1_cap: Device or resource busy
+grep: /sys/class/drm/card1/device/hwmon/hwmon2/power1_cap_default: Device or resource busy
+grep: /sys/class/drm/card1/device/hwmon/hwmon2/power1_cap_max: Device or resource busy
+grep: /sys/class/drm/card1/device/hwmon/hwmon2/power1_cap_min: Device or resource busy
+== gpu temp labels
+/sys/class/drm/card1/device/hwmon/hwmon2/temp1_label:edge
+/sys/class/drm/card1/device/hwmon/hwmon2/temp2_label:junction
+/sys/class/drm/card1/device/hwmon/hwmon2/temp3_label:mem
 == perf
 
  Performance counter stats for 'sleep 1':
 
-           276,652      cycles:u                                                              
-           265,322      instructions:u                                                        
-             6,723      cache-misses:u                                                        
-             4,553      branch-misses:u                                                       
+           286,522      cycles:u                                                              
+           265,001      instructions:u                                                        
+             6,579      cache-misses:u                                                        
+             4,509      branch-misses:u                                                       
 
-       1.000639943 seconds time elapsed
+       1.000613092 seconds time elapsed
 
-       0.000606000 seconds user
+       0.000574000 seconds user
        0.000000000 seconds sys
 
 
 == dmesg
-[    0.197156] MCE: In-kernel MCE decoding enabled.
-[    0.295977] ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+
-[    0.295979] ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+
-[    0.329753] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
-[    0.330581] pci 0000:00:01.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.330788] pci 0000:00:01.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.331059] pci 0000:00:02.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.332279] pci 0000:00:02.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.332708] pci 0000:00:08.1: [1022:14dd] type 01 class 0x060400 PCIe Root Port
-[    0.332867] pci 0000:00:08.3: [1022:14dd] type 01 class 0x060400 PCIe Root Port
-[    0.333570] pci 0000:01:00.0: [1002:1478] type 01 class 0x060400 PCIe Switch Upstream Port
-[    0.333768] pci 0000:01:00.0: 252.048 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x16 link at 0000:00:01.1 (capable of 504.112 Gb/s with 32.0 GT/s PCIe x16 link)
-[    0.333942] pci 0000:02:00.0: [1002:1479] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.334696] pci 0000:03:00.0: [1002:7550] type 00 class 0x030000 PCIe Legacy Endpoint
-[    0.334894] pci 0000:03:00.0: 252.048 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x16 link at 0000:00:01.1 (capable of 504.112 Gb/s with 32.0 GT/s PCIe x16 link)
-[    0.335004] pci 0000:03:00.1: [1002:ab40] type 00 class 0x040300 PCIe Legacy Endpoint
-[    0.335292] pci 0000:04:00.0: [1dbe:5236] type 00 class 0x010802 PCIe Endpoint
-[    0.335574] pci 0000:05:00.0: [1022:43f4] type 01 class 0x060400 PCIe Switch Upstream Port
-[    0.337439] pci 0000:06:00.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.337692] pci 0000:06:01.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.338996] pci 0000:06:02.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.339235] pci 0000:06:03.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.340521] pci 0000:06:04.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.340763] pci 0000:06:05.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341000] pci 0000:06:06.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341239] pci 0000:06:07.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341478] pci 0000:06:08.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341720] pci 0000:06:09.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341972] pci 0000:06:0a.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.342214] pci 0000:06:0b.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.342453] pci 0000:06:0c.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.343757] pci 0000:06:0d.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.345114] pci 0000:08:00.0: [10ec:8125] type 00 class 0x020000 PCIe Endpoint
-[    0.346420] pci 0000:0a:00.0: [14c3:0616] type 00 class 0x028000 PCIe Endpoint
-[    0.347996] pci 0000:13:00.0: [1022:43f7] type 00 class 0x0c0330 PCIe Legacy Endpoint
-[    0.348943] pci 0000:14:00.0: [1022:43f6] type 00 class 0x010601 PCIe Legacy Endpoint
-[    0.350093] pci 0000:15:00.0: [1c5c:174a] type 00 class 0x010802 PCIe Endpoint
-[    0.350397] pci 0000:16:00.0: [1002:164e] type 00 class 0x030000 PCIe Legacy Endpoint
-[    0.350564] pci 0000:16:00.1: [1002:1640] type 00 class 0x040300 PCIe Legacy Endpoint
-[    0.350685] pci 0000:16:00.2: [1022:1649] type 00 class 0x108000 PCIe Endpoint
-[    0.350827] pci 0000:16:00.3: [1022:15b6] type 00 class 0x0c0330 PCIe Endpoint
-[    0.350953] pci 0000:16:00.4: [1022:15b7] type 00 class 0x0c0330 PCIe Endpoint
-[    0.351078] pci 0000:16:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
-[    0.351253] pci 0000:17:00.0: [1022:15b8] type 00 class 0x0c0330 PCIe Endpoint
-[    0.416700] pcieport 0000:00:01.1: PME: Signaling with IRQ 30
-[    0.416833] pcieport 0000:00:01.2: PME: Signaling with IRQ 31
-[    0.416965] pcieport 0000:00:02.1: PME: Signaling with IRQ 32
-[    0.417101] pcieport 0000:00:02.2: PME: Signaling with IRQ 33
-[    0.417233] pcieport 0000:00:08.1: PME: Signaling with IRQ 34
-[    0.417342] pcieport 0000:00:08.3: PME: Signaling with IRQ 35
-[    5.081192] amdgpu: vga_switcheroo: detected switching method \_SB_.PCI0.GP17.VGA_.ATPX handle
-[    5.081308] amdgpu: ATPX version 1, functions 0x00000000
-[    5.090470] amdgpu: Virtual CRAT table created for CPU
-[    5.090480] amdgpu: Topology: Add CPU node
-[    5.090551] amdgpu 0000:03:00.0: enabling device (0006 -> 0007)
-[    5.090582] amdgpu 0000:03:00.0: initializing kernel modesetting (IP DISCOVERY 0x1002:0x7550 0x1DA2:0xE490 0xC0).
-[    5.090589] amdgpu 0000:03:00.0: register mmio base: 0xF6B00000
-[    5.090590] amdgpu 0000:03:00.0: register mmio size: 524288
-[    5.094052] amdgpu 0000:03:00.0: detected ip block number 0 <common_v1_0_0> (soc24_common)
-[    5.094054] amdgpu 0000:03:00.0: detected ip block number 1 <gmc_v12_0_0> (gmc_v12_0)
-[    5.094056] amdgpu 0000:03:00.0: detected ip block number 2 <ih_v7_0_0> (ih_v7_0)
-[    5.094057] amdgpu 0000:03:00.0: detected ip block number 3 <psp_v14_0_0> (psp)
-[    5.094058] amdgpu 0000:03:00.0: detected ip block number 4 <smu_v14_0_0> (smu)
-[    5.094060] amdgpu 0000:03:00.0: detected ip block number 5 <dce_v1_0_0> (dm)
-[    5.094061] amdgpu 0000:03:00.0: detected ip block number 6 <gfx_v12_0_0> (gfx_v12_0)
-[    5.094062] amdgpu 0000:03:00.0: detected ip block number 7 <sdma_v7_0_0> (sdma_v7_0)
-[    5.094064] amdgpu 0000:03:00.0: detected ip block number 8 <vcn_v5_0_0> (vcn_v5_0_0)
-[    5.094065] amdgpu 0000:03:00.0: detected ip block number 9 <jpeg_v5_0_0> (jpeg_v5_0_0)
-[    5.094067] amdgpu 0000:03:00.0: detected ip block number 10 <mes_v12_0_0> (mes_v12_0)
-[    5.094079] amdgpu 0000:03:00.0: Fetched VBIOS from VFCT
-[    5.094081] amdgpu 0000:03:00.0: [drm] ATOM BIOS: 113-1E490TX-US5, build: 00146854, ver: 023.008.000.068.000001, 2025/04/08
-[    5.115084] amdgpu 0000:03:00.0: vgaarb: deactivate vga console
-[    5.115090] amdgpu 0000:03:00.0: Trusted Memory Zone (TMZ) feature not supported
-[    5.115114] amdgpu 0000:03:00.0: MEM ECC is not presented.
-[    5.115116] amdgpu 0000:03:00.0: SRAM ECC is not presented.
-[    5.115154] amdgpu 0000:03:00.0: vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
-[    5.115159] amdgpu 0000:03:00.0: VRAM: 16304M 0x0000008000000000 - 0x00000083FAFFFFFF (16304M used)
-[    5.115161] amdgpu 0000:03:00.0: GART: 512M 0x0000000000000000 - 0x000000001FFFFFFF
-[    5.115165] amdgpu 0000:03:00.0: [drm] Detected VRAM RAM=16304M, BAR=16384M
-[    5.115166] amdgpu 0000:03:00.0: [drm] RAM width 256bits GDDR6
-[    5.115254] amdgpu 0000:03:00.0:  16304M of VRAM memory ready
-[    5.115256] amdgpu 0000:03:00.0:  15589M of GTT memory ready.
-[    5.115267] amdgpu 0000:03:00.0: [drm] GART: num cpu pages 131072, num gpu pages 131072
-[    5.115364] amdgpu 0000:03:00.0: [drm] PCIE GART of 512M enabled (table at 0x00000083DAB00000).
-[    5.115675] amdgpu 0000:03:00.0: [drm] Loading DMUB firmware via PSP: version=0x0A004B00
-[    5.115978] amdgpu 0000:03:00.0: [VCN instance 0] Found VCN firmware Version ENC: 1.12 DEC: 9 VEP: 0 Revision: 26
-[    5.116034] amdgpu 0000:03:00.0: MES: vmid_mask_mmhub 0x0000ff00, vmid_mask_gfxhub 0x0000ff00
-[    5.116035] amdgpu 0000:03:00.0: MES: gfx_hqd_mask 0x000000fe, compute_hqd_mask 0x0000000c, sdma_hqd_mask 0x000000fc
-[    5.353708] amdgpu 0000:03:00.0: RAP: optional rap ta ucode is not available
-[    5.353710] amdgpu 0000:03:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
-[    5.353748] amdgpu 0000:03:00.0: smu driver if version = 0x0000002e, smu fw if version = 0x00000033, smu fw program = 0, smu fw version = 0x00685000 (104.80.0)
-[    5.400400] amdgpu 0000:03:00.0: SMU is initialized successfully!
-[    5.400665] amdgpu 0000:03:00.0: [drm] Display Core v3.2.384 initialized on DCN 4.0.1
-[    5.400667] amdgpu 0000:03:00.0: [drm] DP-HDMI FRL PCON supported
-[    5.404893] amdgpu 0000:03:00.0: [drm] DMUB hardware initialized: version=0x0A004B00
-[    5.477580] amdgpu 0000:03:00.0: [drm] DP-1: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.679666] amdgpu 0000:03:00.0: [drm] DP-2: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.679711] amdgpu 0000:03:00.0: [drm] HDMI-A-1: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.679731] amdgpu 0000:03:00.0: [drm] HDMI-A-2: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.680167] amdgpu 0000:03:00.0: program CP_MES_CNTL : 0x4000000
-[    5.680170] amdgpu 0000:03:00.0: program CP_MES_CNTL : 0xc000000
-[    5.694686] amdgpu: Virtual CRAT table created for GPU
-[    5.694862] amdgpu: Topology: Add GPU node [0x1002:0x7550]
-[    5.694871] amdgpu 0000:03:00.0: SE 4, SH per SE 2, CU per SH 8, active_cu_number 64
-[    5.694874] amdgpu 0000:03:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
-[    5.694875] amdgpu 0000:03:00.0: ring comp_1.0.0 uses VM inv eng 1 on hub 0
-[    5.694877] amdgpu 0000:03:00.0: ring comp_1.1.0 uses VM inv eng 4 on hub 0
-[    5.694878] amdgpu 0000:03:00.0: ring comp_1.0.1 uses VM inv eng 7 on hub 0
-[    5.694879] amdgpu 0000:03:00.0: ring comp_1.1.1 uses VM inv eng 8 on hub 0
-[    5.694880] amdgpu 0000:03:00.0: ring sdma0 uses VM inv eng 9 on hub 0
-[    5.694881] amdgpu 0000:03:00.0: ring sdma1 uses VM inv eng 10 on hub 0
-[    5.694882] amdgpu 0000:03:00.0: ring vcn_unified_0 uses VM inv eng 0 on hub 8
-[    5.694884] amdgpu 0000:03:00.0: ring jpeg_dec uses VM inv eng 1 on hub 8
-[    5.748121] amdgpu: HMM registered 16304MB device memory
-[    5.750868] amdgpu 0000:03:00.0: Using BACO for runtime pm
-[    5.751267] amdgpu 0000:03:00.0: [drm] Registered 4 planes with drm panic
-[    5.756442] [drm] Initialized amdgpu 3.64.0 for 0000:03:00.0 on minor 1
-[    5.769218] fbcon: amdgpudrmfb (fb0) is primary device
-[    5.769221] amdgpu 0000:03:00.0: [drm] fb0: amdgpudrmfb frame buffer device
-[    5.769797] amdgpu 0000:16:00.0: enabling device (0006 -> 0007)
-[    5.769853] amdgpu 0000:16:00.0: initializing kernel modesetting (IP DISCOVERY 0x1002:0x164E 0x1462:0x7E24 0xCB).
-[    5.769869] amdgpu 0000:16:00.0: register mmio base: 0xF6600000
-[    5.769870] amdgpu 0000:16:00.0: register mmio size: 524288
-[    5.771518] amdgpu 0000:16:00.0: detected ip block number 0 <common_v1_0_0> (nv_common)
-[    5.771520] amdgpu 0000:16:00.0: detected ip block number 1 <gmc_v10_0_0> (gmc_v10_0)
-[    5.771522] amdgpu 0000:16:00.0: detected ip block number 2 <ih_v5_0_0> (navi10_ih)
-[    5.771523] amdgpu 0000:16:00.0: detected ip block number 3 <psp_v13_0_0> (psp)
-[    5.771525] amdgpu 0000:16:00.0: detected ip block number 4 <smu_v13_0_0> (smu)
-[    5.771526] amdgpu 0000:16:00.0: detected ip block number 5 <dce_v1_0_0> (dm)
-[    5.771528] amdgpu 0000:16:00.0: detected ip block number 6 <gfx_v10_0_0> (gfx_v10_0)
-[    5.771529] amdgpu 0000:16:00.0: detected ip block number 7 <sdma_v5_2_0> (sdma_v5_2)
-[    5.771531] amdgpu 0000:16:00.0: detected ip block number 8 <vcn_v3_0_0> (vcn_v3_0)
-[    5.771533] amdgpu 0000:16:00.0: detected ip block number 9 <jpeg_v3_0_0> (jpeg_v3_0)
-[    5.771548] amdgpu 0000:16:00.0: Fetched VBIOS from VFCT
-[    5.771551] amdgpu 0000:16:00.0: [drm] ATOM BIOS: 102-RAPHAEL-008, build: 612127  , ver: 032.019.000.008.000000, 2022/09/26
-[    5.775070] amdgpu 0000:16:00.0: Trusted Memory Zone (TMZ) feature disabled as experimental (default)
-[    5.775099] amdgpu 0000:16:00.0: vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
-[    5.775103] amdgpu 0000:16:00.0: VRAM: 512M 0x000000F400000000 - 0x000000F41FFFFFFF (512M used)
-[    5.775105] amdgpu 0000:16:00.0: GART: 1024M 0x0000000000000000 - 0x000000003FFFFFFF
-[    5.775110] amdgpu 0000:16:00.0: [drm] Detected VRAM RAM=512M, BAR=512M
-[    5.775111] amdgpu 0000:16:00.0: [drm] RAM width 128bits DDR5
-[    5.775178] amdgpu 0000:16:00.0:  512M of VRAM memory ready
-[    5.775180] amdgpu 0000:16:00.0:  15589M of GTT memory ready.
-[    5.775194] amdgpu 0000:16:00.0: [drm] GART: num cpu pages 262144, num gpu pages 262144
-[    5.775347] amdgpu 0000:16:00.0: [drm] PCIE GART of 1024M enabled (table at 0x000000F41FC00000).
-[    5.775637] amdgpu 0000:16:00.0: [drm] Loading DMUB firmware via PSP: version=0x05003500
-[    5.775930] amdgpu 0000:16:00.0: [drm] use_doorbell being set to: [true]
-[    5.775944] amdgpu 0000:16:00.0: [VCN instance 0] Found VCN firmware Version ENC: 1.33 DEC: 4 VEP: 0 Revision: 15
-[    5.798019] amdgpu 0000:16:00.0: reserve 0xa00000 from 0xf41e000000 for PSP TMR
-[    5.862234] amdgpu 0000:16:00.0: RAS: optional ras ta ucode is not available
-[    5.867929] amdgpu 0000:16:00.0: RAP: optional rap ta ucode is not available
-[    5.867930] amdgpu 0000:16:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
-[    5.869345] amdgpu 0000:16:00.0: SMU is initialized successfully!
-[    5.869594] amdgpu 0000:16:00.0: [drm] Display Core v3.2.384 initialized on DCN 3.1.5
-[    5.869597] amdgpu 0000:16:00.0: [drm] DP-HDMI FRL PCON supported
-[    5.870356] amdgpu 0000:16:00.0: [drm] DMUB hardware initialized: version=0x05003500
-[    5.873323] amdgpu 0000:16:00.0: [drm] HDMI-A-3: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.873346] amdgpu 0000:16:00.0: [drm] DP-3: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.873389] amdgpu 0000:16:00.0: [drm] DP-4: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.873646] amdgpu 0000:16:00.0: [drm] DP-5: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
-[    5.873941] amdgpu 0000:16:00.0: kiq ring mec 2 pipe 1 q 0
-[    5.876938] amdgpu: Virtual CRAT table created for GPU
-[    5.877602] amdgpu: Topology: Add GPU node [0x1002:0x164e]
-[    5.877611] amdgpu 0000:16:00.0: SE 1, SH per SE 1, CU per SH 2, active_cu_number 2
-[    5.877614] amdgpu 0000:16:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
-[    5.877615] amdgpu 0000:16:00.0: ring gfx_0.1.0 uses VM inv eng 1 on hub 0
-[    5.877616] amdgpu 0000:16:00.0: ring comp_1.0.0 uses VM inv eng 4 on hub 0
-[    5.877617] amdgpu 0000:16:00.0: ring comp_1.1.0 uses VM inv eng 5 on hub 0
-[    5.877619] amdgpu 0000:16:00.0: ring comp_1.2.0 uses VM inv eng 6 on hub 0
-[    5.877620] amdgpu 0000:16:00.0: ring comp_1.3.0 uses VM inv eng 7 on hub 0
-[    5.877621] amdgpu 0000:16:00.0: ring comp_1.0.1 uses VM inv eng 8 on hub 0
-[    5.877622] amdgpu 0000:16:00.0: ring comp_1.1.1 uses VM inv eng 9 on hub 0
-[    5.877623] amdgpu 0000:16:00.0: ring comp_1.2.1 uses VM inv eng 10 on hub 0
-[    5.877624] amdgpu 0000:16:00.0: ring comp_1.3.1 uses VM inv eng 11 on hub 0
-[    5.877625] amdgpu 0000:16:00.0: ring kiq_0.2.1.0 uses VM inv eng 12 on hub 0
-[    5.877626] amdgpu 0000:16:00.0: ring sdma0 uses VM inv eng 13 on hub 0
-[    5.877628] amdgpu 0000:16:00.0: ring vcn_dec_0 uses VM inv eng 0 on hub 8
-[    5.877629] amdgpu 0000:16:00.0: ring vcn_enc_0.0 uses VM inv eng 1 on hub 8
-[    5.877630] amdgpu 0000:16:00.0: ring vcn_enc_0.1 uses VM inv eng 4 on hub 8
-[    5.877631] amdgpu 0000:16:00.0: ring jpeg_dec uses VM inv eng 5 on hub 8
-[    5.878394] amdgpu 0000:16:00.0: Runtime PM not available
-[    5.878824] amdgpu 0000:16:00.0: [drm] Registered 4 planes with drm panic
-[    5.878827] [drm] Initialized amdgpu 3.64.0 for 0000:16:00.0 on minor 0
-[    5.881018] amdgpu 0000:16:00.0: [drm] Cannot find any crtc or sizes
-[    7.303127] snd_hda_intel 0000:16:00.1: bound 0000:16:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
-[    7.304742] snd_hda_intel 0000:03:00.1: bound 0000:03:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
-[    9.381332] amdgpu 0000:03:00.0: [drm] *ERROR* Unsupported screen format RA24 little-endian (0x34324152)
-[    9.381699] amdgpu 0000:03:00.0: [drm] *ERROR* Unsupported screen format RA24 little-endian (0x34324152)
-[    9.384111] amdgpu 0000:03:00.0: [drm] *ERROR* Unsupported screen format RA24 little-endian (0x34324152)
-[    9.394571] amdgpu 0000:03:00.0: [drm] *ERROR* Unsupported screen format RA24 little-endian (0x34324152)
-[    9.624332] amdgpu 0000:03:00.0: [drm] *ERROR* Unsupported screen format RA24 little-endian (0x34324152)
-[ 2567.881305] amdgpu 0000:03:00.0: [drm] PCIE GART of 512M enabled (table at 0x00000083DAB00000).
-[ 2567.881330] amdgpu 0000:03:00.0: PSP is resuming...
-[ 2568.088855] amdgpu 0000:03:00.0: RAP: optional rap ta ucode is not available
-[ 2568.088857] amdgpu 0000:03:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
-[ 2568.088859] amdgpu 0000:03:00.0: SMU is resuming...
-[ 2568.110217] amdgpu 0000:03:00.0: SMU is resumed successfully!
-[ 2568.110387] amdgpu 0000:03:00.0: program CP_MES_CNTL : 0x4000000
-[ 2568.110390] amdgpu 0000:03:00.0: program CP_MES_CNTL : 0xc000000
-[ 2568.121428] amdgpu 0000:03:00.0: [drm] DMUB hardware initialized: version=0x0A004B00
-[ 2568.128894] amdgpu 0000:03:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
-[ 2568.128897] amdgpu 0000:03:00.0: ring comp_1.0.0 uses VM inv eng 1 on hub 0
-[ 2568.128898] amdgpu 0000:03:00.0: ring comp_1.1.0 uses VM inv eng 4 on hub 0
-[ 2568.128900] amdgpu 0000:03:00.0: ring comp_1.0.1 uses VM inv eng 7 on hub 0
-[ 2568.128901] amdgpu 0000:03:00.0: ring comp_1.1.1 uses VM inv eng 8 on hub 0
-[ 2568.128902] amdgpu 0000:03:00.0: ring sdma0 uses VM inv eng 9 on hub 0
-[ 2568.128903] amdgpu 0000:03:00.0: ring sdma1 uses VM inv eng 10 on hub 0
-[ 2568.128904] amdgpu 0000:03:00.0: ring vcn_unified_0 uses VM inv eng 0 on hub 8
-[ 2568.128906] amdgpu 0000:03:00.0: ring jpeg_dec uses VM inv eng 1 on hub 8
-== gpus (pci)
-03:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 48 [Radeon RX 9070/9070 XT/9070 GRE] [1002:7550] (rev c0)
-16:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Raphael [Radeon 610M] [1002:164e] (rev cb)
-== card -> pci
-== perf
-
- Performance counter stats for 'sleep 1':
-
-           279,145      cycles:u                                                              
-           266,288      instructions:u                                                        
-             6,636      cache-misses:u                                                        
-             4,646      branch-misses:u                                                       
-
-       1.000605961 seconds time elapsed
-
-       0.000575000 seconds user
-       0.000000000 seconds sys
-
-
-== dmesg
-[    0.329753] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
-[    0.330581] pci 0000:00:01.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.330788] pci 0000:00:01.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.331059] pci 0000:00:02.1: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.332279] pci 0000:00:02.2: [1022:14db] type 01 class 0x060400 PCIe Root Port
-[    0.332708] pci 0000:00:08.1: [1022:14dd] type 01 class 0x060400 PCIe Root Port
-[    0.332867] pci 0000:00:08.3: [1022:14dd] type 01 class 0x060400 PCIe Root Port
-[    0.333570] pci 0000:01:00.0: [1002:1478] type 01 class 0x060400 PCIe Switch Upstream Port
-[    0.333768] pci 0000:01:00.0: 252.048 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x16 link at 0000:00:01.1 (capable of 504.112 Gb/s with 32.0 GT/s PCIe x16 link)
-[    0.333942] pci 0000:02:00.0: [1002:1479] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.334696] pci 0000:03:00.0: [1002:7550] type 00 class 0x030000 PCIe Legacy Endpoint
-[    0.334894] pci 0000:03:00.0: 252.048 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x16 link at 0000:00:01.1 (capable of 504.112 Gb/s with 32.0 GT/s PCIe x16 link)
-[    0.335004] pci 0000:03:00.1: [1002:ab40] type 00 class 0x040300 PCIe Legacy Endpoint
-[    0.335292] pci 0000:04:00.0: [1dbe:5236] type 00 class 0x010802 PCIe Endpoint
-[    0.335574] pci 0000:05:00.0: [1022:43f4] type 01 class 0x060400 PCIe Switch Upstream Port
-[    0.337439] pci 0000:06:00.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.337692] pci 0000:06:01.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.338996] pci 0000:06:02.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.339235] pci 0000:06:03.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.340521] pci 0000:06:04.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.340763] pci 0000:06:05.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341000] pci 0000:06:06.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341239] pci 0000:06:07.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341478] pci 0000:06:08.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341720] pci 0000:06:09.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.341972] pci 0000:06:0a.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.342214] pci 0000:06:0b.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.342453] pci 0000:06:0c.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.343757] pci 0000:06:0d.0: [1022:43f5] type 01 class 0x060400 PCIe Switch Downstream Port
-[    0.345114] pci 0000:08:00.0: [10ec:8125] type 00 class 0x020000 PCIe Endpoint
-[    0.346420] pci 0000:0a:00.0: [14c3:0616] type 00 class 0x028000 PCIe Endpoint
-[    0.347996] pci 0000:13:00.0: [1022:43f7] type 00 class 0x0c0330 PCIe Legacy Endpoint
-[    0.348943] pci 0000:14:00.0: [1022:43f6] type 00 class 0x010601 PCIe Legacy Endpoint
-[    0.350093] pci 0000:15:00.0: [1c5c:174a] type 00 class 0x010802 PCIe Endpoint
-[    0.350397] pci 0000:16:00.0: [1002:164e] type 00 class 0x030000 PCIe Legacy Endpoint
-[    0.350564] pci 0000:16:00.1: [1002:1640] type 00 class 0x040300 PCIe Legacy Endpoint
-[    0.350685] pci 0000:16:00.2: [1022:1649] type 00 class 0x108000 PCIe Endpoint
-[    0.350827] pci 0000:16:00.3: [1022:15b6] type 00 class 0x0c0330 PCIe Endpoint
-[    0.350953] pci 0000:16:00.4: [1022:15b7] type 00 class 0x0c0330 PCIe Endpoint
-[    0.351078] pci 0000:16:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
-[    0.351253] pci 0000:17:00.0: [1022:15b8] type 00 class 0x0c0330 PCIe Endpoint
 [    0.416700] pcieport 0000:00:01.1: PME: Signaling with IRQ 30
 [    0.416833] pcieport 0000:00:01.2: PME: Signaling with IRQ 31
 [    0.416965] pcieport 0000:00:02.1: PME: Signaling with IRQ 32
@@ -658,7 +452,3 @@
 == card -> pci
 lrwxrwxrwx 1 root root    0 Okt  13 10:11 card0 -> ../../devices/pci0000:00/0000:00:08.1/0000:16:00.0/drm/card0
 lrwxrwxrwx 1 root root    0 Okt  13 10:11 card1 -> ../../devices/pci0000:00/0000:00:01.1/0000:01:00.0/0000:02:00.0/0000:03:00.0/drm/card1
-== gpu temp labels
-/sys/class/drm/card1/device/hwmon/hwmon2/temp1_label:edge
-/sys/class/drm/card1/device/hwmon/hwmon2/temp2_label:junction
-/sys/class/drm/card1/device/hwmon/hwmon2/temp3_label:mem
