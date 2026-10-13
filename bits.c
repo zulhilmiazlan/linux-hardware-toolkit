@@ -19,6 +19,10 @@ uint32_t toggle_bit(uint32_t v, unsigned n) {
     return v ^ (1u << n);
 }
 
+uint32_t get_field(uint32_t v, unsigned lo, unsigned width) {
+    return (v >> lo) & ((1u << width)-1);
+}
+
 int main (void) {
 
     assert(set_bit(0x35, 1) == 0x37);
@@ -33,7 +37,11 @@ int main (void) {
 
     assert(toggle_bit(0x35, 3) == 0x3D);
     assert(toggle_bit(0x35, 2) == 0x31);
-    assert(toggle_bit(toggle_bit(0x35, 4), 4 )== 0x35);
+    assert(toggle_bit(toggle_bit(0x35, 4), 4)== 0x35);
+
+    assert(get_field(0x35, 3, 3) == 6);
+    assert(get_field(0xF5, 3, 3) == 6);
+    assert(get_field(0x357, 4, 8) == 0x35);
 
     printf("all test passed\n");
     return 0;
