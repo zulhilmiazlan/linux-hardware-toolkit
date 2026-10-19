@@ -20,7 +20,13 @@ uint32_t toggle_bit(uint32_t v, unsigned n) {
 }
 
 uint32_t get_field(uint32_t v, unsigned lo, unsigned width) {
-    return (v >> lo) & ((1u << width) - 1);
+    return (v >> lo) & ((1u << width) - 1u);
+}
+
+uint32_t set_field(uint32_t v, unsigned lo, unsigned width, uint32_t value) {
+    uint32_t ones = (1u << width) - 1u;
+    assert(value <= ones);  // value must fit in the field
+    return (v & ~(ones << lo)) | ((value & ones) << lo);
 }
 
 int main (void) {
@@ -37,11 +43,16 @@ int main (void) {
 
     assert(toggle_bit(0x35, 3) == 0x3D);
     assert(toggle_bit(0x35, 2) == 0x31);
-    assert(toggle_bit(toggle_bit(0x35, 4), 4)== 0x35);
+    assert(toggle_bit(toggle_bit(0x35, 4), 4) == 0x35);
 
     assert(get_field(0x35, 3, 3) == 6);
     assert(get_field(0xF5, 3, 3) == 6);
     assert(get_field(0x357, 4, 8) == 0x35);
+    
+    assert(set_field(0x35, 3, 3, 3) == 0x1D);
+    assert(set_field(0x35, 3, 3, 6) == 0x35);
+    assert(set_field(0x0357, 4, 8, 0xAB) == 0x0AB7);
+    assert(get_field(set_field(0x35, 3, 3, 5), 3, 3) == 5);  // write then read back gives the same value
 
     printf("all test passed\n");
     return 0;
