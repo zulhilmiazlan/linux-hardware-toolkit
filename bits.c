@@ -20,7 +20,7 @@ uint32_t toggle_bit(uint32_t v, unsigned n) {
 }
 
 uint32_t get_field(uint32_t v, unsigned lo, unsigned width) {
-    return (v >> lo) & ((1u << width)-1);
+    return (v >> lo) & ((1u << width) - 1);
 }
 
 int main (void) {
