@@ -29,6 +29,16 @@ uint32_t set_field(uint32_t v, unsigned lo, unsigned width, uint32_t value) {
     return (v & ~(ones << lo)) | ((value & ones) << lo);
 }
 
+unsigned popcount(uint32_t v) {
+    unsigned count = 0;
+    for (unsigned n = 0; n < 32; n++) {   // uint32_t always has exactly 32 bits
+        if (test_bit(v, n)) {
+            count++;
+        }
+    }
+    return count;
+}
+
 int main (void) {
 
     assert(set_bit(0x35, 1) == 0x37);
@@ -53,6 +63,11 @@ int main (void) {
     assert(set_field(0x35, 3, 3, 6) == 0x35);
     assert(set_field(0x0357, 4, 8, 0xAB) == 0x0AB7);
     assert(get_field(set_field(0x35, 3, 3, 5), 3, 3) == 5);  // write then read back gives the same value
+
+    assert(popcount(0x35) == 4);
+    assert(popcount(0) == 0);            // no bits on
+    assert(popcount(0xFFFFFFFF) == 32);   // every bit on
+    assert(popcount(0x80000000) == 1);   // only the very top bit, switch 31
 
     printf("all test passed\n");
     return 0;
