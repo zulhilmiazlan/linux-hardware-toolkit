@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -15,34 +17,53 @@ int main(int argc, char *argv[]) {
     }
 
     unsigned char line[16];  // one line's worth of bytes
+    unsigned char prev[16];  // stores the contents of the previous line
+    size_t prev_n = 0;  // stores the length of the previous line
+    bool star_printed = false;  // tracking flag for the duplicating sequence
     size_t offset = 0;  // position in the file
     size_t n;
 
     while ((n = fread(line, 1, 16, f)) > 0) {
-        printf("%08zx ", offset);
-        for (size_t i = 0; i < n; i++) {
-            if (i == 8) {
-                printf(" ");
+        if (offset > 0 && n == prev_n && memcmp(line, prev, n) == 0) {
+            if (!star_printed) {
+                printf("*\n");
+                star_printed = true;
             }
-            printf(" %02x", line[i]);
+
+        } else {
+            printf("%08zx ", offset);
+            for (size_t i = 0; i < n; i++) {
+                if (i == 8) {
+                    printf(" ");
+                }
+                printf(" %02x", line[i]);
+            }
+
+            for (size_t i = n; i < 16; i++) {
+                if (i == 8) {
+                    printf(" ");
+                }
+                printf("   ");
+            }
+
+            printf("  |");
+
+            for (size_t i =0; i < n; i++) {
+                if (isprint(line[i])) {
+                    putchar(line[i]);
+                } else {
+                    putchar('.');
+                }
+            }
+
+            printf("|\n");
+
+            star_printed = false;
         }
 
-        for (size_t i = n; i < 16; i++) {
-            if (i == 8) {
-                printf(" ");
-            }
-            printf("   ");
-        }
+        memcpy(prev, line, n);
+        prev_n = n;
 
-        printf("  |");
-        for (size_t i =0; i < n; i++) {
-            if (isprint(line[i])) {
-                putchar(line[i]);
-            } else {
-                putchar('.');
-            }
-        }
-        printf("|\n");
         offset += n;
     }
 
