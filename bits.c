@@ -46,6 +46,12 @@ uint32_t bswap32(uint32_t v) {
            (get_field(v, 0,  8) << 24);
 }
 
+bool is_little_endian(void) {
+    uint32_t x = 1;                          
+    unsigned char *first = (unsigned char *)&x;
+    return *first == 1;                      
+}
+
 int main (void) {
 
     assert(set_bit(0x35, 1) == 0x37);
@@ -80,6 +86,8 @@ int main (void) {
     assert(bswap32(0x000000FF) == 0xFF000000);
     assert(bswap32(0xAABBBBAA) == 0xAABBBBAA);
     assert(bswap32(bswap32(0x12345678)) == 0x12345678);
+
+    assert(is_little_endian() == true);
 
 
     printf("all test passed\n");
