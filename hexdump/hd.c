@@ -46,7 +46,9 @@ int main(int argc, char *argv[]) {
         offset += n;
     }
 
-    printf("%08zx\n", offset);
+    if (offset > 0) {
+        printf("%08zx\n", offset);
+    }
 
     fclose(f);
     return 0;
