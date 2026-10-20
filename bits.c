@@ -39,6 +39,13 @@ unsigned popcount(uint32_t v) {
     return count;
 }
 
+uint32_t bswap32(uint32_t v) {
+    return (get_field(v, 24, 8) << 0)  | 
+           (get_field(v, 16, 8) << 8)  | 
+           (get_field(v, 8,  8) << 16) | 
+           (get_field(v, 0,  8) << 24);
+}
+
 int main (void) {
 
     assert(set_bit(0x35, 1) == 0x37);
@@ -68,6 +75,12 @@ int main (void) {
     assert(popcount(0) == 0);            // no bits on
     assert(popcount(0xFFFFFFFF) == 32);   // every bit on
     assert(popcount(0x80000000) == 1);   // only the very top bit, switch 31
+
+    assert(bswap32(0x12345678) == 0x78563412);
+    assert(bswap32(0x000000FF) == 0xFF000000);
+    assert(bswap32(0xAABBBBAA) == 0xAABBBBAA);
+    assert(bswap32(bswap32(0x12345678)) == 0x12345678);
+
 
     printf("all test passed\n");
     return 0;
