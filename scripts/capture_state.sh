@@ -40,6 +40,25 @@ capture() {
     fi
 }
 
+# Read every hwmon sensor device. Devices are labelled by name, because the hwmonN numbers
+# differ between machines and can change between boots.
+read_sensors() {
+    local status=0
+    for dev in /sys/class/hwmon/hwmon*; do
+        echo "== $(cat "$dev/name")  ($dev)"
+        for f in "$dev"/*_input "$dev"/*_label; do
+            [ -e "$f" ] || continue
+            if value=$(cat "$f" 2>&1); then
+                echo "$(basename "$f"): $value"
+            else
+                echo "$(basename "$f"): UNREADABLE ($value)"
+                status=1
+            fi
+        done
+    done
+    return "$status"
+}
+
 # Kernel and OS
 capture uname.txt        uname -a
 capture os-release.txt   cat /etc/os-release
@@ -61,5 +80,8 @@ capture lsblk.txt        lsblk -o NAME,SIZE,MODEL,TRAN
 
 # Kernel log
 capture dmesg.txt        dmesg
+
+# Sensors
+capture sensors.txt      read_sensors
 
 echo "Saved to $outdir"
