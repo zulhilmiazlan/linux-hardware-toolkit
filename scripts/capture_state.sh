@@ -67,6 +67,29 @@ read_sensors() {
     return "$status"
 }
 
+# Read every RAPL power zone: energy counter and power limits.
+read_power() {
+    local status=0
+    for zone in /sys/class/powercap/*:*; do
+        [ -e "$zone/name" ] || continue
+        echo "== $(cat "$zone/name")  ($zone)"
+        print_files "$zone"/enabled "$zone"/energy_uj "$zone"/max_energy_range_uj "$zone"/constraint_* || status=1
+    done
+    return "$status"
+}
+
+# Read the frequency policy of every CPU group: driver, governor, energy preference, limits.
+read_cpufreq() {
+    local status=0
+    for pol in /sys/devices/system/cpu/cpufreq/policy*; do
+        echo "== $(basename "$pol")"
+        print_files "$pol"/scaling_driver "$pol"/scaling_governor \
+                    "$pol"/energy_performance_preference \
+                    "$pol"/scaling_min_freq "$pol"/scaling_max_freq "$pol"/cpuinfo_max_freq || status=1
+    done
+    return "$status"
+}
+
 # Kernel and OS
 capture uname.txt        uname -a
 capture os-release.txt   cat /etc/os-release
@@ -91,5 +114,9 @@ capture dmesg.txt        dmesg
 
 # Sensors
 capture sensors.txt      read_sensors
+
+# Power and CPU frequency
+capture power.txt        read_power
+capture cpufreq.txt      read_cpufreq
 
 echo "Saved to $outdir"
